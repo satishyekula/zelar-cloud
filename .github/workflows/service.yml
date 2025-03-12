@@ -1,7 +1,9 @@
 name: Build on aws branch changes
 
 on:
-
+  push:
+    branches:
+      - aws
   pull_request:
     branches:
       - aws
