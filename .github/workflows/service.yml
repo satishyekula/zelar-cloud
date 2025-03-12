@@ -1,0 +1,20 @@
+name: Build on aws branch changes
+
+on:
+
+  pull_request:
+    branches:
+      - aws
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Build Commands
+        run: |
+          echo "Build triggered due to changes in the aws branch"
+          # Add your actual build steps here
