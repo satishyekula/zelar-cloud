@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: zelar-cloud
 
     steps:
       - name: Checkout Repository
